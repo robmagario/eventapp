@@ -1,5 +1,19 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Load the SDK asynchronously
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
 
   <link rel="shortcut icon" href="/images/favicons/favicon.ico?v=1">
   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-touch-icon-57x57.png?v=1">
@@ -18,4 +32,5 @@
   <meta name="msapplication-TileColor" content="#27374a">
   <meta name="msapplication-TileImage" content="/images/favicons/mstile-144x144.png?v=1">
   <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
+
 </head>

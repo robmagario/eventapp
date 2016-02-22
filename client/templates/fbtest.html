@@ -1,0 +1,14 @@
+<template name="fbtest">
+    <button class="addSocial">+</button>
+    <fb:login-button scope="email,publish_actions,manage_pages,publish_pages,user_managed_groups"
+                     onlogin="location.reload()"></fb:login-button>
+    <button class="logout">logout</button>
+    <button class="perm" onclick="permission.ask()">permission</button>
+    <br><br>
+    {{#if social}}
+        <p id="message">
+        <button >Send Message</button> <input placeholder="Hello!">
+        <div class="result"></div>
+        </p>
+    {{/if}}
+</template>
